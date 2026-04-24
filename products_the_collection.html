@@ -314,9 +314,12 @@
 <div>
 <h4 class="font-headline italic text-xl text-[#fafaf3] mb-4">Newsletter</h4>
 <p class="font-worksans text-xs uppercase tracking-widest leading-relaxed text-[#fafaf3] opacity-70 mb-6">Receive field notes and harvest updates.</p>
-<form class="flex gap-2">
-<input class="bg-white/10 border-none text-white text-xs tracking-widest px-4 py-3 flex-grow focus:ring-1 focus:ring-secondary" placeholder="YOUR EMAIL" type="email"/>
-<button class="bg-secondary text-white px-6 py-3 text-[10px] font-bold tracking-widest uppercase">Join</button>
+<form class="flex gap-2" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+<input type="hidden" name="subject" value="New Newsletter Subscription - Sainik Naturals">
+<input type="hidden" name="redirect" value="https://gayatrijhaxreal.github.io/sainik-naturals/products_the_collection.html">
+<input class="bg-white/10 border-none text-white text-xs tracking-widest px-4 py-3 flex-grow focus:ring-1 focus:ring-secondary" placeholder="YOUR EMAIL" type="email" name="Email" required/>
+<button class="bg-secondary text-white px-6 py-3 text-[10px] font-bold tracking-widest uppercase" type="submit">Join</button>
 </form>
 <div class="mt-8">
 <p class="text-[#fafaf3] opacity-50 text-[10px] tracking-widest">© 2024 Sainik Naturals. The Disciplined Harvest.</p>

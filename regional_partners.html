@@ -265,24 +265,27 @@
 </div>
 </div>
 <div class="bg-surface-container-low p-10 md:p-16 editorial-shadow">
-<form class="space-y-6">
+<form class="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+<input type="hidden" name="subject" value="New Partnership Inquiry - Sainik Naturals">
+<input type="hidden" name="redirect" value="https://gayatrijhaxreal.github.io/sainik-naturals/regional_partners.html">
 <div class="grid grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
 <label class="text-xs font-bold uppercase tracking-widest text-primary">First Name</label>
-<input class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" placeholder="Aravind" type="text"/>
+<input class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" placeholder="Aravind" type="text" name="First Name" required/>
 </div>
 <div class="flex flex-col gap-2">
 <label class="text-xs font-bold uppercase tracking-widest text-primary">Last Name</label>
-<input class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" placeholder="Singh" type="text"/>
+<input class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" placeholder="Singh" type="text" name="Last Name" required/>
 </div>
 </div>
 <div class="flex flex-col gap-2">
 <label class="text-xs font-bold uppercase tracking-widest text-primary">Company Email</label>
-<input class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" placeholder="aravind@logistics.com" type="email"/>
+<input class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" placeholder="aravind@logistics.com" type="email" name="Email" required/>
 </div>
 <div class="flex flex-col gap-2">
 <label class="text-xs font-bold uppercase tracking-widest text-primary">Regional Interest</label>
-<select class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors">
+<select class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" name="Region" required>
 <option>North America</option>
 <option>European Union</option>
 <option>South East Asia</option>
@@ -291,7 +294,7 @@
 </div>
 <div class="flex flex-col gap-2">
 <label class="text-xs font-bold uppercase tracking-widest text-primary">Brief Business Description</label>
-<textarea class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" placeholder="Tell us about your distribution footprint..." rows="4"></textarea>
+<textarea class="bg-surface-container border-0 border-b-2 border-transparent focus:ring-0 focus:border-primary p-3 transition-colors" placeholder="Tell us about your distribution footprint..." rows="4" name="Description" required></textarea>
 </div>
 <button class="w-full bg-secondary text-on-secondary py-4 font-bold tracking-[0.2em] uppercase text-sm hover:bg-on-secondary-container transition-colors mt-4" type="submit">Submit Application</button>
 </form>
