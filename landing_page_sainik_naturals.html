@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sainik Naturals | Purity you can trace</title>
+    <meta name="description" content="Sainik Naturals - Authentic Indian spices sourced directly from military-managed estates. Premium, export-grade quality with full transparency."/>
+    <meta name="keywords" content="Indian spices, natural spices, military managed farms, single origin spices, premium spices, wholesale spices, export grade spices, turmeric, saffron, peppercorns"/>
+    <meta property="og:title" content="Sainik Naturals | Purity you can trace"/>
+    <meta property="og:description" content="Authentic Indian spices sourced directly from military-managed estates. Premium, export-grade quality with full transparency."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.sainiknaturals.com/"/>
+    <link rel="canonical" href="https://www.sainiknaturals.com/"/>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..300,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: { DEFAULT: "#FDFBF7", 100: "#F5F3ED", 200: "#EAE7DE" },
+                        primary: { DEFAULT: "#1A2518", hover: "#263523" },
+                        accent: { DEFAULT: "#C5A880", hover: "#B3956D" }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Newsreader', 'serif'],
+                    },
+                    spacing: {
+                        '128': '32rem',
+                        '144': '36rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+        
+        /* Smooth interactions */
+        .hover-lift { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(26, 37, 24, 0.08); }
+        
+        .img-zoom { transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .group:hover .img-zoom { transform: scale(1.05); }
+
+        /* Scroll Animations */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Subtle image overlay gradient */
+        .story-gradient { background: linear-gradient(to top, rgba(26,37,24,0.9) 0%, rgba(26,37,24,0) 100%); }
+    </style>
+</head>
+<body class="bg-base text-primary font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-base/85 backdrop-blur-xl border-b border-black/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex justify-between items-center">
+            <a href="landing_page_sainik_naturals.html" class="text-2xl font-serif tracking-tight text-primary font-medium">Sainik Naturals</a>
+            
+            <div class="hidden md:flex gap-10 items-center">
+                <a href="products_the_collection.html" class="text-sm tracking-wide text-primary/70 hover:text-primary transition-colors">Products</a>
+                <a href="certification.html" class="text-sm tracking-wide text-primary/70 hover:text-primary transition-colors">Standards</a>
+                <a href="about_us_our_story.html" class="text-sm tracking-wide text-primary/70 hover:text-primary transition-colors">Story</a>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <span class="material-symbols-outlined text-xl cursor-pointer text-primary/70 hover:text-primary transition-colors">shopping_bag</span>
+                <button class="bg-primary text-white px-6 py-2.5 text-xs tracking-[0.15em] uppercase font-medium hover:bg-primary-hover transition-colors rounded-full">
+                    Partner
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-[90vh] flex items-center pt-32 pb-20 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full grid md:grid-cols-2 gap-16 items-center">
+                <!-- Text Content -->
+                <div class="max-w-xl z-10 reveal active">
+                    <h1 class="text-6xl md:text-8xl font-serif leading-[1.05] tracking-tight mb-8">
+                        Purity you <br/>
+                        <span class="italic font-light text-accent">can trace.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl font-light text-primary/70 leading-relaxed mb-12 max-w-md">
+                        Authentic Indian spices sourced directly from military-managed estates. Zero intermediaries. Absolute discipline.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-8">
+                        <button onclick="window.location.href='products_the_collection.html'" class="bg-primary text-white px-8 py-4 text-xs tracking-[0.15em] uppercase font-medium hover:bg-primary-hover transition-colors hover-lift rounded-full">
+                            Explore Collection
+                        </button>
+                        <a href="certification.html" class="text-xs tracking-[0.15em] uppercase font-medium text-primary hover:text-accent transition-colors">
+                            Our Standards
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Visual Content -->
+                <div class="relative h-[600px] w-full rounded-2xl overflow-hidden group reveal active" style="transition-delay: 200ms;">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATU_9qShsMLbqzh4Apj_98z-A75tCJZpw32hlC1fOWJE7CR3PdYrmHZukseNCAC91aYW4A6KfxvvRdvpHDcOdGPXLQV-N_EjkZ4aPAdCUXyqYhlqLDPxWF7uAgJ52KBtAsOPX7o8iUwcPnVL7tOWpHuz37BtImvOQPrubGi4TPRFPxC_pZmzOBTd0ECLjUwoNt-lUPAhBI9jkjh2H7quNh1pIhzldKiZo1pI-1PayQjgbRHeQnxd40sYLBVaihv5oWp2gysq_aPGe5" alt="Turmeric pouring" class="w-full h-full object-cover img-zoom" />
+                    <!-- Abstract texture overlay -->
+                    <div class="absolute inset-0 bg-primary/5 mix-blend-multiply pointer-events-none"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proof Section (Stripe Pattern) -->
+        <section class="py-24 border-y border-primary/5 bg-base-100 reveal">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="grid md:grid-cols-3 gap-12 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-primary/10">
+                    
+                    <div class="pt-8 md:pt-0 md:px-8 first:pt-0 first:px-0">
+                        <span class="material-symbols-outlined text-3xl text-accent mb-6 block">landscape</span>
+                        <h3 class="text-lg font-medium tracking-wide mb-3">Estate Sourced</h3>
+                        <p class="text-sm font-light text-primary/70 leading-relaxed">Direct from our disciplined, single-origin farms. No aggregators.</p>
+                    </div>
+
+                    <div class="pt-8 md:pt-0 md:px-8">
+                        <span class="material-symbols-outlined text-3xl text-accent mb-6 block">science</span>
+                        <h3 class="text-lg font-medium tracking-wide mb-3">Lab Tested</h3>
+                        <p class="text-sm font-light text-primary/70 leading-relaxed">Every batch is rigorously tested for curcumin, piperine, and essential oils.</p>
+                    </div>
+
+                    <div class="pt-8 md:pt-0 md:px-8">
+                        <span class="material-symbols-outlined text-3xl text-accent mb-6 block">flight_takeoff</span>
+                        <h3 class="text-lg font-medium tracking-wide mb-3">Export Grade</h3>
+                        <p class="text-sm font-light text-primary/70 leading-relaxed">Meeting strict international standards for the world's finest kitchens.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section (Horizontal Timeline) -->
+        <section class="py-32 reveal">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="flex flex-col md:flex-row gap-16 md:gap-8 items-end mb-20">
+                    <h2 class="text-4xl md:text-5xl font-serif tracking-tight max-w-lg">The discipline behind the harvest.</h2>
+                    <p class="text-sm font-light text-primary/60 max-w-xs pb-2">We don't just grow spices; we engineer purity through a strict four-step operational protocol.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <!-- Connecting Line -->
+                    <div class="hidden md:block absolute top-6 left-0 w-full h-[1px] bg-primary/10"></div>
+                    
+                    <!-- Steps -->
+                    <div class="relative group">
+                        <div class="w-12 h-12 rounded-full bg-base border border-primary/20 flex items-center justify-center mb-8 relative z-10 group-hover:border-accent group-hover:text-accent transition-colors">
+                            <span class="text-xs font-medium">01</span>
+                        </div>
+                        <h4 class="text-lg font-medium mb-3">Cultivate</h4>
+                        <p class="text-sm font-light text-primary/60 leading-relaxed">Precision agriculture on military-managed soil.</p>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="w-12 h-12 rounded-full bg-base border border-primary/20 flex items-center justify-center mb-8 relative z-10 group-hover:border-accent group-hover:text-accent transition-colors" style="transition-delay: 100ms;">
+                            <span class="text-xs font-medium">02</span>
+                        </div>
+                        <h4 class="text-lg font-medium mb-3">Harvest</h4>
+                        <p class="text-sm font-light text-primary/60 leading-relaxed">Hand-selected at the exact peak of maturity.</p>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="w-12 h-12 rounded-full bg-base border border-primary/20 flex items-center justify-center mb-8 relative z-10 group-hover:border-accent group-hover:text-accent transition-colors" style="transition-delay: 200ms;">
+                            <span class="text-xs font-medium">03</span>
+                        </div>
+                        <h4 class="text-lg font-medium mb-3">Process</h4>
+                        <p class="text-sm font-light text-primary/60 leading-relaxed">Slow, controlled drying to protect volatile oils.</p>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="w-12 h-12 rounded-full bg-base border border-primary/20 flex items-center justify-center mb-8 relative z-10 group-hover:border-accent group-hover:text-accent transition-colors" style="transition-delay: 300ms;">
+                            <span class="text-xs font-medium">04</span>
+                        </div>
+                        <h4 class="text-lg font-medium mb-3">Deliver</h4>
+                        <p class="text-sm font-light text-primary/60 leading-relaxed">Sealed and dispatched directly to your facility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section (Apple Style) -->
+        <section class="py-32 bg-base-100 reveal">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="text-center mb-24">
+                    <h2 class="text-4xl md:text-6xl font-serif tracking-tight mb-6">Signature Exports</h2>
+                    <a href="products_the_collection.html" class="text-sm tracking-wide text-accent hover:text-primary transition-colors inline-flex items-center justify-center gap-2">
+                        View Full Catalog <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+                    
+                    <!-- Product 1 -->
+                    <div class="group cursor-pointer">
+                        <div class="bg-base rounded-2xl overflow-hidden aspect-[4/3] mb-8 relative hover-lift flex items-center justify-center p-12">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8irZOoKC6Jk7e8zwY7TKjanySi6wiQ3aHauVmCQZhhgr6hL01kz9EN3AfFoY8N_uEjCGcuhxqA9q83ZVa2Blf6zBvLJqF84PNUEGgy13GuirM-39lXnJ-AJZhWTAQd2S6X9-m9-CZ7MHVcFvHomIej_n9hDPXQCdILMOy5xbQFz6DK0Gsj4nvJwfC1aaAFq6j8QX4Bsj3xqIqKvCbclncYkE4TGuuGl9CzfxFGJB8UTDtpcg96L2DYnryPsQ97y2GwetLNuCm8C08" alt="Highland Saffron" class="w-full h-full object-cover absolute inset-0 img-zoom opacity-90 mix-blend-multiply" />
+                            <div class="absolute top-6 left-6 bg-base/80 backdrop-blur text-primary text-[10px] uppercase tracking-widest px-4 py-1.5 rounded-full font-medium">Limited</div>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <h3 class="text-2xl font-serif tracking-tight mb-2">Highland Saffron</h3>
+                                <p class="text-sm font-light text-primary/60">Hand-picked at 4:00 AM</p>
+                            </div>
+                            <span class="text-sm font-medium">$42.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="group cursor-pointer md:mt-24">
+                        <div class="bg-base rounded-2xl overflow-hidden aspect-[4/3] mb-8 relative hover-lift flex items-center justify-center p-12">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLXY3HQZX7d4c-DKa9KDqvg6Rpmk38FBFy2YiMZcPwc4kIOkqZ7E5m1kKyQhZZ_Q2pU_OIxLGANgD8cQjZgwk4Ljk34sAyzYeb3ErHd32_eqRvdYO7niFSNpLH9O9w3Zd8KX4VeR318opHklAsTyX9h2KxPMOMUvfM2NzCUaqDN-PW05l5KXSslQQS5icXITZJqcEoB8xMng6Jcyba1bQ5RE5EVuHE_sittnvgqwJZN2jg0aXyx_AnoacLR0Mzd9CtjfT4zmBjzIAm" alt="Black Gold Peppercorns" class="w-full h-full object-cover absolute inset-0 img-zoom opacity-90 mix-blend-multiply" />
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <h3 class="text-2xl font-serif tracking-tight mb-2">Tellicherry Peppercorns</h3>
+                                <p class="text-sm font-light text-primary/60">Sun-dried, Grade A</p>
+                            </div>
+                            <span class="text-sm font-medium">$28.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="h-[80vh] min-h-[600px] relative flex items-end pb-24 reveal">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNseR82dAkDNMGW0NzYZTmRD-uKhUKeohIHlE1EoZNsmcKmeN9LlHJ7GZx1I2eaDxenAPrv0qAG-CC92w2bpmhPZWmaxh0dpDJzxNmst11eEZL1Ko2ibetTjTVCxrNamalvXqP5LC3VD04fcTApk8BSW_9gMKXJyVWOcPXrVCkAblkUCchRe4Wkooa80sEMAOlka1wr6_iHmmQHhRqiIdeM52CzVP5A_l5xLlcjUO8v6wXN4tk8ObunSFnJOTOiJmNP0E0QC9phUpQ" alt="Chef" class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 story-gradient"></div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full text-white">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl md:text-6xl font-serif tracking-tight mb-8 leading-[1.1]">
+                        "In twenty years, I've never encountered spices with this level of structural integrity."
+                    </h2>
+                    <p class="text-sm tracking-widest uppercase font-medium text-white/70">
+                        — Marcus Vance, Executive Chef
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="py-24 border-b border-primary/5 reveal">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center">
+                <p class="text-xs uppercase tracking-widest font-medium text-primary/40 mb-12">Certified Standards</p>
+                <div class="flex flex-wrap justify-center gap-16 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 text-primary">
+                    <span class="material-symbols-outlined text-4xl">verified</span>
+                    <span class="material-symbols-outlined text-4xl">eco</span>
+                    <span class="material-symbols-outlined text-4xl">gavel</span>
+                    <span class="material-symbols-outlined text-4xl">public</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-40 flex flex-col items-center text-center reveal">
+            <h2 class="text-5xl md:text-7xl font-serif tracking-tight mb-12 max-w-3xl leading-[1.05]">
+                Bring authentic Indian spices to your market.
+            </h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <button onclick="window.location.href='regional_partners.html'" class="bg-primary text-white px-10 py-4 text-xs tracking-[0.15em] uppercase font-medium hover:bg-primary-hover transition-colors rounded-full hover-lift">
+                    Start a Conversation
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-primary/10 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="md:col-span-2">
+                    <a href="landing_page_sainik_naturals.html" class="text-2xl font-serif tracking-tight text-primary font-medium block mb-6">Sainik Naturals</a>
+                    <p class="text-sm font-light text-primary/60 max-w-xs leading-relaxed">
+                        Cultivating excellence through military precision and ancestral wisdom.
+                    </p>
+                </div>
+                
+                <div>
+                    <h5 class="text-xs font-medium uppercase tracking-widest mb-6">Company</h5>
+                    <ul class="space-y-4">
+                        <li><a href="about_us_our_story.html" class="text-sm font-light text-primary/60 hover:text-primary transition-colors">Our Story</a></li>
+                        <li><a href="certification.html" class="text-sm font-light text-primary/60 hover:text-primary transition-colors">Standards</a></li>
+                        <li><a href="regional_partners.html" class="text-sm font-light text-primary/60 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-xs font-medium uppercase tracking-widest mb-6">Legal</h5>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-sm font-light text-primary/60 hover:text-primary transition-colors">Privacy</a></li>
+                        <li><a href="#" class="text-sm font-light text-primary/60 hover:text-primary transition-colors">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-primary/10 text-xs font-light text-primary/40">
+                <p>© 2024 Sainik Naturals. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-primary transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-primary transition-colors">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
